@@ -1,6 +1,6 @@
 'use strict';
-let msg;
 function getShippingCost(country) {
+    let msg;
     switch (country) {
         case "China":
             msg = "Shipping to China will cost 100 credits";
@@ -16,6 +16,7 @@ function getShippingCost(country) {
             break;
         default:
             msg = "Sorry, there is no delivery to your country";
+            break;
     }
     return msg;
 }
